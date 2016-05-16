@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">酒店自助入住终端</string>
+
+    <!-- 图片描述 -->
+    <string name="ib_back">后退按钮</string>
+    <string name="iv_notice">公告图案</string>
+    <string name="iv_pwd1">声纹密码第1位</string>
+    <string name="iv_pwd2">声纹密码第2位</string>
+    <string name="iv_pwd3">声纹密码第3位</string>
+    <string name="iv_pwd4">声纹密码第4位</string>
+    <string name="iv_pwd5">声纹密码第5位</string>
+    <string name="iv_pwd6">声纹密码第6位</string>
+    <string name="iv_pwd7">声纹密码第7位</string>
+    <string name="iv_pwd8">声纹密码第8位</string>
+
+    <!-- 界面文本 -->
+    <string name="tv_init">系统初始化中，请稍后……</string>
+
+    <!-- Activity标题 -->
+    <string name="title_activity_init">初始化界面</string>
+    <string name="title_activity_main">主界面</string>
+    <string name="title_activity_swipe_card">刷卡界面</string>
+    <string name="title_activity_voiceprint">声纹验证界面</string>
+    <string name="title_activity_select_time">选时间界面</string>
+    <string name="title_activity_select_room">选房间界面</string>
+    <string name="title_activity_pay">支付界面</string>
+    <string name="title_activity_result">结果界面</string>
+    <string name="title_activity_capture_id_card">拍摄身份证界面</string>
+    <string name="title_activity_guest">散客登记界面</string>
+    <string name="title_activity_room_info">房间信息界面</string>
+
+    <!-- 测试 -->
+    <string name="title_activity_test_voice_service">TestVoiceServiceActivity</string>
+    <string name="title_activity_test_core_service">TestCoreServiceActivity</string>
+    <string name="title_activity_test_misc_service">TestMiscServiceActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.xmu.ultraci.hotelcheckin.client"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:name=".AppEntry"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name=".service.ThirdpartyService" >
+        </service>
+        <service android:name=".service.CoreService" >
+        </service>
+        <service android:name=".service.MiscService" >
+        </service>
+
+        <!-- 测试3个服务用的界面 -->
+        <activity
+            android:name=".test.TestCoreServiceActivity"
+            android:label="@string/title_activity_test_core_service" >
+        </activity>
+        <activity
+            android:name=".test.TestVoiceServiceActivity"
+            android:label="@string/title_activity_test_voice_service" >
+        </activity>
+        <activity
+            android:name=".test.TestMiscServiceActivity"
+            android:label="@string/title_activity_test_misc_service" >
+        </activity>
+
+        <!-- 基本布局 -->
+
+        <activity
+            android:name=".activity.BaseActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+
+        <!-- 实际布局 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.SwipeCardActivity"
+            android:label="@string/title_activity_swipe_card"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.VoiceprintActivity"
+            android:label="@string/title_activity_voiceprint"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.InitActivity"
+            android:label="@string/title_activity_init"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SelectTimeActivity"
+            android:label="@string/title_activity_select_time"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.SelectRoomActivity"
+            android:label="@string/title_activity_pay"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.ResultActivity"
+            android:label="@string/title_activity_pay"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.PayActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.CaptureIdCardActivity"
+            android:label="@string/title_activity_capture_id_card"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.GuestActivity"
+            android:label="@string/title_activity_guest"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.RoomInfoActivity"
+            android:label="@string/title_activity_room_info"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        </activity>
+    </application>
+
+</manifest>

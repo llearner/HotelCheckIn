@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/ll_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/iv_pwd1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd1" />
+
+        <ImageView
+            android:id="@+id/iv_pwd2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd2" />
+
+        <ImageView
+            android:id="@+id/iv_pwd3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd3" />
+
+        <ImageView
+            android:id="@+id/iv_pwd4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd4" />
+
+        <ImageView
+            android:id="@+id/iv_pwd5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd5" />
+
+        <ImageView
+            android:id="@+id/iv_pwd6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd6" />
+
+        <ImageView
+            android:id="@+id/iv_pwd7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd7" />
+
+        <ImageView
+            android:id="@+id/iv_pwd8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/iv_pwd8" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_volume"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="64dp"
+        android:visibility="invisible"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:max="30" />
+
+</RelativeLayout>
